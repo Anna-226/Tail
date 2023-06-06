@@ -1,0 +1,76 @@
+.popular {
+  // .popular__container
+
+  &__container {
+  }
+
+  // .popular__title
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  // .popular__cards
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+.item-popular {
+  width: 297px;
+  height: 385px;
+  &:hover {
+    & .item-popular__image > img {
+      transform: scale(1.3);
+    }
+    & .item-popular__info {
+      background-color: #eef6f9;
+    }
+    & .item-popular__price {
+      color: #fd912e;
+    }
+  }
+  // .item-popular__image
+
+  &__image {
+    width: 100%;
+    height: 315px;
+    object-fit: cover;
+    overflow: hidden;
+    & img {
+      transition: all 0.3s ease 0s;
+    }
+  }
+
+  // .item-popular__info
+
+  &__info {
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+  }
+
+  // .item-popular__name
+
+  &__name {
+    font-family: "Comfortaa";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    color: #82b5d1;
+    margin-bottom: 6px;
+  }
+
+  // .item-popular__price
+
+  &__price {
+    font-family: "Poiret One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}

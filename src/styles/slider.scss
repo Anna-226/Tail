@@ -97,6 +97,7 @@
     left: -100%;
     padding: 10px 30px 10px 22px;
     border-left: 3px solid #fd912e;
+    border-radius: 0px 10px 10px 0px;
   }
 
   // .swiper-slide__button
@@ -106,6 +107,7 @@
     bottom: 45px;
     right: -100%;
     border-right: 3px solid #fd912e;
+    border-radius: 10px 0px 0px 10px;
   }
 }
 .button {
@@ -118,6 +120,7 @@
   background-color: #eef6f9;
   opacity: 0.9;
   transition: all 0.2s ease 0s;
+  //border-radius: 10px 10px 10px 10px;
   &:hover {
     color: #2a6788;
   }

@@ -1,0 +1,88 @@
+.special {
+  padding-top: 100px;
+  padding-bottom: 85px;
+  // .special__container
+
+  &__container {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: -61px;
+      right: -6px;
+      width: 166px;
+      height: 166px;
+      background: url("../assets/img/icons/sale.svg") 0 0 / cover no-repeat;
+    }
+  }
+  //special__block
+  &__block {
+    overflow: hidden;
+    display: flex;
+    align-items: stretch;
+    position: relative;
+  }
+  // .special__content
+
+  &__content {
+    flex: 1 1 23%;
+  }
+
+  // .special__title
+
+  &__title {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    margin-bottom: 30px;
+    z-index: 10;
+    transform: translate(-300%, 0);
+  }
+
+  // .special__text
+
+  &__text {
+    padding: 170px 32px 32px 0px;
+    font-family: "Comfortaa";
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 145.8%;
+    letter-spacing: 0.075em;
+    color: #82b5d1;
+    & p {
+      &:not(:last-child) {
+        margin-bottom: 34px;
+      }
+    }
+  }
+
+  // .special__image
+
+  &__image {
+    flex: 1 1 73%;
+    height: 100%;
+    position: relative;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .special__button
+
+  &__button {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    border-right: 3px solid #fd912e;
+    transform: translate(200%, 0);
+  }
+}
+.orange {
+  color: #fd912e;
+  padding: 6px 30px 19px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-left: 3px solid #82b5d1;
+  backdrop-filter: blur(25px);
+}

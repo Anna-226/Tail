@@ -28,6 +28,7 @@ window.addEventListener('DOMContentLoaded', function () {
   (0,_modules_animation__WEBPACK_IMPORTED_MODULE_4__["default"])('.block-category_big', '.block-category_big', 'from-left', 400);
   (0,_modules_animation__WEBPACK_IMPORTED_MODULE_4__["default"])('.block-category_second', '.block-category_big', 'from-up', 400);
   (0,_modules_animation__WEBPACK_IMPORTED_MODULE_4__["default"])('.block-category_third', '.block-category_big', 'from-down', 400);
+  (0,_modules_animation__WEBPACK_IMPORTED_MODULE_4__["default"])('.special__sale', '.orange', 'from-right', 200);
   (0,_modules_animation__WEBPACK_IMPORTED_MODULE_4__["default"])('.special__button', '.orange', 'from-right', 200);
   (0,_modules_animation__WEBPACK_IMPORTED_MODULE_4__["default"])('.orange', '.orange', 'from-left', 200);
 });
@@ -164,11 +165,12 @@ var slider = function slider(sliderSelector) {
     pagination: {
       el: '.swiper-pagination',
       clickable: true
-    },
-    autoplay: {
-      delay: 5000
     }
+    /*       autoplay: {
+             delay: 5000,
+          }, */
   });
+
   var slideName = document.querySelectorAll('.swiper-slide__slide-name'),
     slideDescripton = document.querySelectorAll('.swiper-slide__description'),
     slideButton = document.querySelectorAll('.swiper-slide__button');

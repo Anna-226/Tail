@@ -1,5 +1,5 @@
 .popular {
-   padding-bottom: 100px;
+  padding-bottom: 100px;
   // .popular__container
 
   &__container {
@@ -21,20 +21,20 @@
     gap: 30px;
   }
 }
-.item-popular {
+.good-item {
   width: 297px;
   height: 385px;
   &:hover {
-    & .item-popular__image > img {
+    & .good-item__image > img {
       transform: scale(1.2);
     }
-    & .item-popular__icons {
+    & .good-item__icons {
       opacity: 1;
     }
-    & .item-popular__info {
+    & .good-item__info {
       background-color: #eef6f9;
     }
-    & .item-popular__price {
+    & .good-item__price {
       color: #fd912e;
     }
   }
@@ -43,10 +43,12 @@
   &__image {
     width: 100%;
     height: 315px;
-    object-fit: cover;
     overflow: hidden;
     position: relative;
     & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       transition: all 0.3s ease 0s;
     }
   }

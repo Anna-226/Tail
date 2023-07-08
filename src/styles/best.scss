@@ -1,5 +1,5 @@
 .best {
-   padding-bottom: 168px;
+  padding-bottom: 168px;
   // .best__container
 
   &__container {
@@ -19,72 +19,27 @@
     justify-content: space-between;
   }
 }
-.best-item {
-  height: 523px;
-  flex: 0 0 32%;
-  &:hover {
-    & .best-item__image > img {
-      transform: scale(1.2);
+.good-item {
+  // .item-popular_best
+
+  &_best {
+    width: 405px;
+    height: 526px;
+    & .good-item__image {
+      height: 456px;
     }
-    & .best-item__description {
-      background-color: #eef6f9;
-    }
-    & .best-item__price {
-      color: #fd912e;
-    }
-  }
-  // .best-item__image
-
-  &__image {
-    height: 430px;
-    width: 100%;
-    margin-bottom: 21px;
-    overflow: hidden;
-    & img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: all 0.3s ease 0s;
-    }
-  }
-
-  // .best-item__description
-
-  &__description {
-    padding: 8px 10px 10px;
-    transition: all 0.3s ease 0s;
-  }
-
-  // .best-item__name
-
-  &__name {
-    font-family: "Comfortaa";
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 112.5%;
-    color: #82b5d1;
-    margin-bottom: 6px;
-  }
-
-  // .best-item__price
-
-  &__price {
-    font-family: "Poiret One";
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 116%;
-    color: #82b5d1;
   }
 }
+
 .banner {
   height: 523px;
   flex: 0 0 32%;
   position: relative;
-  &:hover {
+/*   &:hover {
     & .banner__image > img {
       transform: scale(1.2);
     }
-  }
+  } */
   // .banner__image
 
   &__image {

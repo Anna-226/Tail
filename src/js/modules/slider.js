@@ -8,9 +8,9 @@ const slider = (sliderSelector) => {
          el: '.swiper-pagination',
          clickable: true,
       },
-      autoplay: {
+/*       autoplay: {
          delay: 5000,
-      },
+      }, */
    });
    const slideName = document.querySelectorAll('.swiper-slide__slide-name'),
          slideDescripton = document.querySelectorAll('.swiper-slide__description'),

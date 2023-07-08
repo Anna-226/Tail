@@ -1,0 +1,29 @@
+.button {
+  font-family: "Comfortaa";
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 100%;
+  color: #82b5d1;
+  padding: 21px 62px 20px 62px;
+  background-color: #eef6f9;
+  opacity: 0.9;
+  transition: all 0.2s ease 0s;
+  border-radius: 10px 10px 10px 10px;
+  &:hover {
+    color: #2a6788;
+  }
+  &:active {
+    padding: 24px 62px 18px;
+  }
+
+  //.button_border-right
+  &_border-right {
+    border-right: 3px solid #fd912e;
+    border-radius: 10px 0px 0px 10px;
+  }
+  //.button_border-left
+  &_border-left {
+    border-left: 3px solid #fd912e;
+    border-radius: 0px 10px 10px 0px;
+  }
+}

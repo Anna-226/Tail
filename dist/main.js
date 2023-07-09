@@ -28,7 +28,6 @@ window.addEventListener('DOMContentLoaded', function () {
   (0,_modules_animation__WEBPACK_IMPORTED_MODULE_4__["default"])('.block-category_big', '.block-category_big', 'from-left', 400);
   (0,_modules_animation__WEBPACK_IMPORTED_MODULE_4__["default"])('.block-category_second', '.block-category_big', 'from-up', 400);
   (0,_modules_animation__WEBPACK_IMPORTED_MODULE_4__["default"])('.block-category_third', '.block-category_big', 'from-down', 400);
-  (0,_modules_animation__WEBPACK_IMPORTED_MODULE_4__["default"])('.special__sale', '.orange', 'from-right', 200);
   (0,_modules_animation__WEBPACK_IMPORTED_MODULE_4__["default"])('.special__button', '.orange', 'from-right', 200);
   (0,_modules_animation__WEBPACK_IMPORTED_MODULE_4__["default"])('.orange', '.orange', 'from-left', 200);
 });
@@ -131,17 +130,19 @@ var search = function search(searchSelector, searchField, searchButton) {
   });
   document.addEventListener('click', function (e) {
     var target = e.target;
-    if (target && target.classList.contains('header__container') || target && target.classList.contains('main')) {
+    if (target && !target.closest('.search-form') && target !== searchIcon) {
       searchInput.classList.remove('search-active');
+      searchInput.reset();
     }
   });
   document.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') {
       searchInput.classList.remove('search-active');
+      searchInput.reset();
     }
   });
   buttonSearch.addEventListener('click', function () {
-    console.log('1');
+    /*  console.log('1'); */
   });
 };
 /* harmony default export */ __webpack_exports__["default"] = (search);

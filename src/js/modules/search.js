@@ -8,20 +8,23 @@ const search = (searchSelector, searchField, searchButton) => {
    });
 
    document.addEventListener('click', (e) => {
-     let target = e.target;
-      if (target && target.classList.contains('header__container') || target && target.classList.contains('main')) {
+ 
+      let target = e.target;
+      if (target && !target.closest('.search-form') && target !== searchIcon) {
          searchInput.classList.remove('search-active');
+         searchInput.reset();
       }
    });
 
    document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
          searchInput.classList.remove('search-active');
+         searchInput.reset();
       }
    });
 
    buttonSearch.addEventListener('click', ()=> {
-      console.log('1');
+     /*  console.log('1'); */
    });
 };
 export default search;

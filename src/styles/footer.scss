@@ -114,12 +114,14 @@
   &__input {
     background: #ffffff;
     border: 3px solid #eef6f9;
+    border-radius: 10px;
     padding: 19px;
     font-family: "Comfortaa";
     font-weight: 300;
     font-size: 24px;
     line-height: 112.5%;
     margin-bottom: 22px;
+    color: #2A6788;
     &::placeholder {
       color: #ffe5c7;
     }
@@ -128,14 +130,7 @@
   // .subscribe-form__button
 
   &__button {
-    font-family: "Comfortaa";
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 100%;
-    color: #82b5d1;
-    padding: 18px;
     border: 3px solid #ffffff;
-    backdrop-filter: blur(25px);
   }
 }
 .down-footer {
@@ -152,7 +147,7 @@
   &__copyright {
   }
 
-  // .down-footer__icons 
+  // .down-footer__icons
 
   &__icons {
     display: flex;
@@ -160,7 +155,7 @@
   }
   // .down-footer__social
 
-  &__social {    
+  &__social {
     width: 40px;
     height: 40px;
     transition: all 0.3s ease 0s;

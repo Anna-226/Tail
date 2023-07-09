@@ -10,7 +10,8 @@
   transition: all 0.2s ease 0s;
   border-radius: 10px 10px 10px 10px;
   &:hover {
-    color: #2a6788;
+    background-color: #82b5d1;
+    color: #eef6f9;
   }
   &:active {
     padding: 24px 62px 18px;
@@ -26,4 +27,28 @@
     border-left: 3px solid #fd912e;
     border-radius: 0px 10px 10px 0px;
   }
+}
+input {
+  background: #ffffff;
+  border: 3px solid #eef6f9;
+  border-radius: 10px;
+  font-family: "Comfortaa";
+  &::placeholder {
+    color: #ffe5c7;
+  }
+  &:focus {
+    border: 3px solid #82b5d1;
+    &::placeholder {
+      color: transparent;
+    }
+  }
+  /*   &:invalid {
+    border: 3px solid #ffe5c7;
+    color: #fe9696;
+  }
+  &:valid {
+    background-color: #EEF6F9;
+    border: 3px solid #82B5D1;
+    color: #82B5D1;
+  } */
 }

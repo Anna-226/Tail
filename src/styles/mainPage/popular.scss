@@ -1,0 +1,119 @@
+.popular {
+  padding-bottom: 100px;
+  // .popular__container
+
+  &__container {
+  }
+
+  // .popular__title
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  // .popular__cards
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+.good-item {
+  width: 297px;
+  height: 385px;
+  border-radius: 10px;
+  &:hover {
+    background-color: #eef6f9;
+    & .good-item__image > img {
+      transform: scale(1.2);
+    }
+    & .good-item__icons {
+      opacity: 1;
+    }
+    & .good-item__name {
+      //background-color: #eef6f9;
+      color: #2a6788;
+    }
+    & .good-item__price {
+      color: #2a6788;
+    }
+  }
+  // .good-item__image
+
+  &__image {
+    width: 100%;
+    height: 315px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px 10px 10px 10px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: all 0.3s ease 0s;
+    }
+  }
+
+  // .good-item__icons
+
+  &__icons {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    padding: 10px 20px;
+    display: flex;
+    gap: 20px;
+    background-color: rgba(238, 246, 249, 0.5);
+    transition: all 0.2s ease 0s;
+    opacity: 0;
+    border-radius: 10px 0px 0px 10px;
+  }
+
+  // .good-item__info
+
+  &__info {
+    padding: 10px;
+    transition: all 0.3s ease 0s;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  // .good-item__name
+
+  &__name {
+    font-family: "Comfortaa";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    color: #82b5d1;
+    margin-bottom: 6px;
+  }
+
+  // .good-item__price
+
+  &__price {
+    font-family: "Poiret One";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+.icons-choice {
+  // .icons-choice__item
+
+  &__item {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    &:hover {
+      color: #2a6788;
+    }
+    &:active {
+      color: #fd912e;
+    }
+  }
+}

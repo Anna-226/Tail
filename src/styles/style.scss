@@ -17,11 +17,11 @@
 }
 :focus,
 :active {
-   outline: none;
+  outline: none;
 }
 a:focus,
 a:active {
-   outline: none;
+  outline: none;
 }
 html,
 body {
@@ -75,15 +75,40 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-h2 {
-  font-family: "Poiret One";
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 117%;
   color: #82b5d1;
+  font-family: Poiret One;
+  font-weight: 400;
+  line-height: normal;
+}
+h1 {
+  font-size: 96px;
+  @media (max-width: 767.98px) {
+    font-size: 64px;
+  }
+}
+
+h2 {
+  font-size: 64px;
+  @media (max-width: 767.98px) {
+    font-size: 48px;
+  }
+}
+h3 {
+  font-size: 48px;
+  @media (max-width: 767.98px) {
+    font-size: 36px;
+  }
+}
+.main-text {
+  color: #82b5d1;
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 145.5%;
+  letter-spacing: 1.8px;
+  @media (max-width: 767.98px) {
+    font-size: 16px;
+  }
 }
 .wrapper {
   background-color: #fff;
@@ -120,12 +145,12 @@ h2 {
   }
 } */
 
+@import "./fonts";
 @import "./common";
 @import "./header";
-@import "./slider";
-@import "./category";
-@import "./popular";
-@import "./special";
-@import "./best";
 @import "./footer";
-@import "./fonts";
+@import "./mainPage/slider";
+@import "./mainPage/category";
+@import "./mainPage/popular";
+@import "./mainPage/special";
+@import "./mainPage/best";

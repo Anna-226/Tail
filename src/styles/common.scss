@@ -3,18 +3,32 @@
   font-weight: 700;
   font-size: 28px;
   line-height: 100%;
-  color: #82b5d1;
-  padding: 21px 62px 20px 62px;
+  color: #2A6788;
+  padding: 18px 62px 17px;
   background-color: #eef6f9;
   opacity: 0.9;
   transition: all 0.2s ease 0s;
   border-radius: 10px 10px 10px 10px;
+  @media (max-width: 991.98px) {
+    padding: 19px 41px 19px;
+  }
+  @media (max-width: 767.98px) {
+    padding: 12px 45px 11px 43px;
+    font-size: 24px;
+  }
   &:hover {
-    background-color: #82b5d1;
-    color: #eef6f9;
+    background-color: #FFE5C7;
+    color: #2A6788;
   }
   &:active {
-    padding: 24px 62px 18px;
+    background-color: #FD912E;
+    padding: 23px 62px 18px;
+    @media (max-width: 991.98px) {
+      padding: 21px 41px 17px;
+    }
+    @media (max-width: 767.98px) {
+      padding: 14px 45px 9px 43px;
+    }
   }
 
   //.button_border-right

@@ -1,4 +1,6 @@
 const burger = (burgerSelector) => {
+   headerAdaptive();
+
    const burgerBtn = document.querySelector(burgerSelector),
          header = document.querySelector('header'),
          body = document. querySelector('body');
@@ -19,6 +21,24 @@ const burger = (burgerSelector) => {
          header.classList.remove('menu-open');
          body.classList.remove('locked');
       }
+   });
+
+   function headerAdaptive() {
+      const like = document.querySelector('._icon-like'),
+            menuList = document.querySelector('.menu__body'),
+            iconCart = document.querySelector('._icon-cart');
+      if (document.documentElement.clientWidth<=767.98) {
+         const likedBlock = document.createElement('div');
+         likedBlock.classList.add('likedBlock');
+         menuList.prepend(likedBlock);
+         likedBlock.appendChild(like);
+      } else {
+         iconCart.before(like);
+      }
+   }
+   
+   window.addEventListener('resize', () => {
+      headerAdaptive();
    });
 };
 

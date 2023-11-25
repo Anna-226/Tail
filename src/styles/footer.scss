@@ -20,6 +20,12 @@
   // .footer__column
 
   &__column {
+  // .footer__column_first
+  flex: 1 1 30%;  
+    &_first {
+      display: flex;
+      column-gap: 152px;
+    }
   }
 
   // .footer__second-floor
@@ -123,7 +129,7 @@
     margin-bottom: 22px;
     color: #2A6788;
     &::placeholder {
-      color: #ffe5c7;
+      color: #82B5D1;
     }
   }
 
